@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "yarn clean && webpack --config webpack.prod.js",
+    "deploy": "gh-pages -b master -d doc",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "clean": "rimraf doc/build"
   },
@@ -24,6 +25,7 @@
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "gh-pages": "^2.2.0",
     "rimraf": "^3.0.2",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
